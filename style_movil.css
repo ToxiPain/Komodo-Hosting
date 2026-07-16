@@ -1,0 +1,193 @@
+/*==========================================
+            MOVIL
+==========================================*/
+
+@media(max-width:768px){
+
+.hero{
+
+    padding-left:20px;
+    padding-right:20px;
+
+}
+
+header{
+
+    height:90px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-direction:row;
+
+    padding-top:10px;
+
+}
+
+.logo{
+
+    height:80px;
+
+}
+
+.menu-toggle{
+
+    display:block;
+
+}
+
+nav{
+
+    display:none;
+
+    position:absolute;
+
+    top:90px;
+
+    left:20px;
+
+    right:20px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:14px;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    z-index:100;
+
+}
+
+nav.active{
+
+    display:flex;
+
+}
+
+nav a{
+
+    font-size:18px;
+
+}
+
+.hero-body{
+
+    flex-direction:column;
+
+    gap:35px;
+
+    text-align:center;
+
+    min-height:auto;
+
+}
+
+.hero-text{
+
+    order:1;
+
+    width:100%;
+
+}
+
+.hero-text h1{
+
+    font-size:36px;
+
+    line-height:1.2;
+
+}
+
+#animatedText{
+
+    display:block;
+
+    width:100%;
+
+    min-height:44px;
+
+    line-height:44px;
+
+    font-size:36px;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-align:center;
+
+}
+
+.description{
+
+    width:100%;
+
+    max-width:100%;
+
+    margin:22px auto;
+
+    font-size:16px;
+
+    line-height:1.65;
+
+    text-align:center;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    flex-direction:row;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:12px;
+
+    width:100%;
+
+}
+
+.primary-button,
+.secondary-button{
+
+    flex:1;
+
+    width:auto;
+
+    text-align:center;
+
+    padding:16px 10px;
+
+    font-size:16px;
+
+}
+
+.hero-image{
+
+    order:2;
+
+    width:100%;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:330px;
+
+}
+
+}

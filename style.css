@@ -1,4 +1,3 @@
-
 /*==========================================
             RESET GENERAL
 ==========================================*/
@@ -60,8 +59,6 @@ body{
 
 }
 
-
-
 /*==========================================
             HERO
 ==========================================*/
@@ -75,8 +72,6 @@ body{
     padding-right:70px;
 
 }
-
-
 
 /*==========================================
             HEADER
@@ -96,8 +91,6 @@ header{
 
 }
 
-
-
 /*==========================================
             LOGO
 ==========================================*/
@@ -112,19 +105,15 @@ header{
 
 }
 
-
 .logo:hover{
 
     transform:scale(1.03);
 
 }
 
-
-
 /*==========================================
             MENÚ
 ==========================================*/
-
 
 nav{
 
@@ -135,7 +124,6 @@ nav{
     gap:42px;
 
 }
-
 
 nav a{
 
@@ -154,14 +142,11 @@ nav a{
 
 }
 
-
 nav a:hover{
 
     color:#486FD8;
 
 }
-
-
 
 /* BOTON HAMBURGUESA */
 
@@ -176,7 +161,6 @@ nav a:hover{
     cursor:pointer;
 
 }
-
 
 .menu-toggle span{
 
@@ -194,13 +178,9 @@ nav a:hover{
 
 }
 
-
-
-
 /*==========================================
             CONTENIDO
 ==========================================*/
-
 
 .hero-body{
 
@@ -216,13 +196,9 @@ nav a:hover{
 
 }
 
-
-
-
 /*==========================================
             IMAGEN
 ==========================================*/
-
 
 .hero-image{
 
@@ -236,7 +212,6 @@ nav a:hover{
 
 }
 
-
 .hero-image img{
 
     width:90%;
@@ -245,20 +220,15 @@ nav a:hover{
 
 }
 
-
-
-
 /*==========================================
             TEXTO
 ==========================================*/
-
 
 .hero-text{
 
     flex:1;
 
 }
-
 
 .mini-title{
 
@@ -276,8 +246,6 @@ nav a:hover{
 
 }
 
-
-
 .hero-text h1{
 
     font-size:52px;
@@ -289,8 +257,6 @@ nav a:hover{
     font-weight:800;
 
 }
-
-
 
 #animatedText{
 
@@ -316,9 +282,6 @@ nav a:hover{
 
 }
 
-
-
-
 .description{
 
     color:#1b1e20;
@@ -333,13 +296,9 @@ nav a:hover{
 
 }
 
-
-
-
 /*==========================================
             BOTONES
 ==========================================*/
-
 
 .buttons{
 
@@ -352,8 +311,6 @@ nav a:hover{
     gap:16px;
 
 }
-
-
 
 .primary-button{
 
@@ -379,7 +336,6 @@ nav a:hover{
 
 }
 
-
 .primary-button:hover{
 
     transform:translateY(-3px);
@@ -387,8 +343,6 @@ nav a:hover{
     background:#30456E;
 
 }
-
-
 
 .secondary-button{
 
@@ -414,7 +368,6 @@ nav a:hover{
 
 }
 
-
 .secondary-button:hover{
 
     background:#1E2A44;
@@ -425,17 +378,11 @@ nav a:hover{
 
 }
 
-
-
-
-
 /*==========================================
             TABLET
 ==========================================*/
 
-
 @media(max-width:1100px){
-
 
 .hero-body{
 
@@ -449,7 +396,6 @@ nav a:hover{
 
 }
 
-
 .description{
 
     margin:auto;
@@ -458,207 +404,10 @@ nav a:hover{
 
 }
 
-
 .hero-text h1{
 
     font-size:45px;
 
 }
 
-
 }
-
-
-
-
-
-/*==========================================
-            MOVIL
-==========================================*/
-
-@media(max-width:768px){
-
-.hero{
-
-    padding-left:20px;
-    padding-right:20px;
-
-}
-
-header{
-
-    height:90px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    flex-direction:row;
-
-    padding-top:10px;
-
-}
-
-.logo{
-
-    height:80px;
-
-}
-
-.menu-toggle{
-
-    display:block;
-
-}
-
-nav{
-
-    display:none;
-
-    position:absolute;
-
-    top:90px;
-
-    left:20px;
-
-    right:20px;
-
-    background:white;
-
-    padding:20px;
-
-    border-radius:14px;
-
-    flex-direction:column;
-
-    gap:18px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-
-    z-index:100;
-
-}
-
-nav.active{
-
-    display:flex;
-
-}
-
-nav a{
-
-    font-size:18px;
-
-}
-
-.hero-body{
-
-    flex-direction:column;
-
-    gap:35px;
-
-    text-align:center;
-
-    min-height:auto;
-
-}
-
-.hero-text{
-
-    order:1;
-
-    width:100%;
-
-}
-
-.hero-text h1{
-
-    font-size:36px;
-
-    line-height:1.2;
-
-}
-
-#animatedText{
-
-    display:block;
-
-    width:100%;
-
-    min-height:44px;
-
-    line-height:44px;
-
-    font-size:36px;
-
-    white-space:nowrap;
-
-    overflow:hidden;
-
-    text-align:center;
-
-}
-
-.description{
-
-    width:100%;
-
-    max-width:100%;
-
-    margin:22px auto;
-
-    font-size:16px;
-
-    line-height:1.65;
-
-    text-align:center;
-
-}
-
-.buttons{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:15px;
-
-    width:100%;
-
-}
-
-.primary-button,
-.secondary-button{
-
-    width:100%;
-
-    text-align:center;
-
-    padding:16px 20px;
-
-}
-
-.hero-image{
-
-    order:2;
-
-    width:100%;
-
-}
-
-.hero-image img{
-
-    width:100%;
-
-    max-width:330px;
-
-}
-
-
-
-
-}
-
-
