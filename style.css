@@ -575,9 +575,9 @@ nav a{
 
 .hero-text h1{
 
-    font-size:42px;
+    font-size:36px;
 
-    line-height:1.15;
+    line-height:1.2;
 
 }
 
@@ -587,13 +587,15 @@ nav a{
 
     width:100%;
 
-    height:auto;
+    min-height:44px;
 
-    line-height:1.2;
+    line-height:44px;
 
-    white-space:normal;
+    font-size:36px;
 
-    overflow:visible;
+    white-space:nowrap;
+
+    overflow:hidden;
 
     text-align:center;
 
@@ -605,11 +607,11 @@ nav a{
 
     max-width:100%;
 
-    margin:25px auto;
+    margin:22px auto;
 
-    font-size:18px;
+    font-size:16px;
 
-    line-height:1.7;
+    line-height:1.65;
 
     text-align:center;
 
