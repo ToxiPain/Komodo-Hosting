@@ -1,0 +1,372 @@
+/*==========================================
+            RESET GENERAL
+==========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:linear-gradient(
+        180deg,
+        #FAFAF9 0%,
+        #c1d8e2 100%
+    );
+    color:#1E2A44;
+    overflow-x:hidden;
+    position:relative;
+}
+
+/*==========================================
+        BARRA SUPERIOR (TOP BAR)
+==========================================*/
+
+.top-bar{
+    width:100%;
+    padding:18px 70px 0px 70px; /* Reducido para juntarlo con el header */
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    background:transparent;
+    position:relative;
+    z-index:10;
+}
+
+.top-bar-buttons{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.top-bar-btn{
+    display:inline-block;
+    padding:10px 22px;
+    border-radius:10px;
+    font-size:15px;
+    font-weight:700;
+    text-decoration:none;
+    transition:.25s;
+}
+
+/* Log In: Relleno azul */
+.top-bar-login{
+    background:#1E2A44;
+    color:#ffffff;
+    border:2px solid #1E2A44;
+    box-shadow:0 4px 15px rgba(30,42,68,.15);
+}
+
+.top-bar-login:hover{
+    background:#30456E;
+    border-color:#30456E;
+    transform:translateY(-2px);
+}
+
+/* Sign Up: Delineado / Transparente */
+.top-bar-signup{
+    color:#1E2A44;
+    border:2px solid #1E2A44;
+    background:transparent;
+}
+
+.top-bar-signup:hover{
+    background:#1E2A44;
+    color:#ffffff;
+    transform:translateY(-2px);
+}
+
+/*==========================================
+        OLA DE FONDO (WAVE GLOW)
+==========================================*/
+
+.background-glow{
+    position:fixed;
+    width:140%;
+    height:600px;
+    top:20%;
+    left:-20%;
+    background:linear-gradient(
+        135deg,
+        rgba(255,255,255,0.85) 0%,
+        rgba(255,255,255,0.15) 50%,
+        rgba(255,255,255,0.7) 100%
+    );
+    /* Genera la forma de ola fluida que cruza la pantalla */
+    clip-path:path("M0,160 C320,300 600,0 960,180 C1320,360 1600,100 1920,220 L1920,600 L0,600 Z");
+    transform:rotate(-6deg);
+    pointer-events:none;
+    z-index:-1;
+    filter:blur(30px);
+    opacity:0.9;
+}
+
+/*==========================================
+            HERO
+==========================================*/
+
+.hero{
+    width:100%;
+    min-height:calc(100vh - 50px);
+    padding-left:70px;
+    padding-right:70px;
+}
+
+/*==========================================
+            HEADER
+==========================================*/
+
+header{
+    height:100px; /* Ajustado sutilmente para reducir margen superior */
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-top:10px;
+}
+
+/*==========================================
+            LOGO
+==========================================*/
+
+.logo{
+    height:150px;
+    cursor:pointer;
+    transition:.30s;
+}
+
+.logo:hover{
+    transform:scale(1.03);
+}
+
+/*==========================================
+            MENÚ
+==========================================*/
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:42px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#1E2A44;
+    font-size:20px;
+    font-weight:700;
+    transition:.25s;
+    text-shadow:
+        0px 1px 2px rgba(30,42,68,.08);
+}
+
+nav a:hover{
+    color:#486FD8;
+}
+
+/* BOTON HAMBURGUESA */
+
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+
+.menu-toggle span{
+    display:block;
+    width:32px;
+    height:4px;
+    background:#1E2A44;
+    margin:6px 0;
+    border-radius:5px;
+}
+
+/*==========================================
+            CONTENIDO
+==========================================*/
+
+.hero-body{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:calc(100vh - 150px);
+    gap:80px;
+}
+
+/*==========================================
+            IMAGEN
+==========================================*/
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-image img{
+    width:90%;
+    max-width:620px;
+}
+
+/*==========================================
+            TEXTO
+==========================================*/
+
+.hero-text{
+    flex:1;
+}
+
+.mini-title{
+    color:#486FD8;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+
+.hero-text h1{
+    font-size:52px;
+    line-height:1.15;
+    margin-bottom:25px;
+    font-weight:800;
+}
+
+#animatedText{
+    display:inline-flex;
+    align-items:center;
+    justify-content:flex-start;
+    width:540px;
+    height:64px;
+    line-height:64px;
+    white-space:nowrap;
+    overflow:hidden;
+    vertical-align:top;
+    color:#486FD8;
+}
+
+.description{
+    color:#1b1e20;
+    font-size:19px;
+    line-height:1.8;
+    max-width:650px;
+    margin-bottom:45px;
+}
+
+/*==========================================
+            BOTONES
+==========================================*/
+
+.buttons{
+    margin-top:25px;
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+
+.primary-button{
+    display:inline-block;
+    background:#1E2A44;
+    color:white;
+    text-decoration:none;
+    padding:18px 38px;
+    border-radius:14px;
+    font-size:17px;
+    font-weight:700;
+    transition:.30s;
+    box-shadow:0 10px 30px rgba(30,42,68,.20);
+}
+
+.primary-button:hover{
+    transform:translateY(-3px);
+    background:#30456E;
+}
+
+.secondary-button{
+    display:inline-block;
+    padding:18px 38px;
+    border-radius:14px;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:700;
+    color:#1E2A44;
+    border:2px solid #1E2A44;
+    background:transparent;
+    transition:.30s;
+}
+
+.secondary-button:hover{
+    background:#1E2A44;
+    color:white;
+    transform:translateY(-3px);
+}
+
+@media(max-width:1200px){
+
+.top-bar{
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.hero{
+    padding-left:40px;
+    padding-right:40px;
+}
+
+header{
+    height:90px;
+}
+
+.logo{
+    height:120px;
+}
+
+nav{
+    gap:24px;
+}
+
+nav a{
+    font-size:17px;
+}
+
+.hero-body{
+    gap:40px;
+}
+
+.hero-image img{
+    max-width:480px;
+}
+
+.hero-text h1{
+    font-size:42px;
+}
+
+#animatedText{
+    width:420px;
+    height:52px;
+    line-height:52px;
+    font-size:42px;
+}
+
+.description{
+    width:100%;
+    max-width:100%;
+    margin:22px auto;
+    font-size:16px;
+    line-height:1.65;
+    text-align:left;
+}
+
+.primary-button,
+.secondary-button{
+    padding:16px 28px;
+    font-size:16px;
+}
+
+}
