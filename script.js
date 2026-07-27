@@ -160,3 +160,29 @@ if(menuToggle && mobileMenu){
 
 }
 
+// =========================================
+// CAMBIO DE IMAGEN AUTOMÁTICO EN EL HERO
+// =========================================
+
+document.addEventListener("DOMContentLoaded", () => {
+    const heroImageElement = document.getElementById("heroMainImage");
+    let isHero1 = true;
+
+    setInterval(() => {
+        // Inicia el desvanecimiento
+        heroImageElement.classList.add("fade-out");
+
+        setTimeout(() => {
+            // Alterna la imagen conservando exactamente el mismo tamaño en pantalla
+            if (isHero1) {
+                heroImageElement.src = "hero2.png"; 
+            } else {
+                heroImageElement.src = "hero.png";
+            }
+            
+            isHero1 = !isHero1;
+            heroImageElement.classList.remove("fade-out");
+        }, 500); // 500ms coincide con la duración de la transición CSS
+        
+    }, 5000); // Cambia cada 5 segundos
+});

@@ -51,7 +51,7 @@
 
 <nav id="mobileMenu">
 <a href="#">Inicio</a>
-<a href="#">Productos</a>
+<a href="#">Servicios</a>
 <a href="#">Planes</a>
 <a href="#">Estado</a>
 <a href="#">Desarrollo</a>
@@ -62,8 +62,12 @@
 
 <div class="hero-body">
 
+<!-- AQUI ESTÁ LA MODIFICACIÓN DE LA IMAGEN -->
 <div class="hero-image">
-<img src="hero.png" alt="Komodo">
+    <!-- Panel de fondo gris -->
+    <div class="hero-bg-panel"></div>
+    <!-- Imagen que irá cambiando -->
+    <img src="hero.png" alt="Komodo" id="heroMainImage">
 </div>
 
 <div class="hero-text">
@@ -81,15 +85,14 @@ dedicada para
 </h1>
 
 <p class="description">
-Ofrecemos servidores dedicados, para alojamiento de
-bots, aplicaciones, páginas web y servicios cloud.
-Con un entorno que ofrece estabilidad, velocidad
-y soporte las 24 horas del dia.
+Ofrecemos servicios de alojamiento y soluciones ideales
+para el desarrollo y escalabilidad de tu proyecto al máximo rendimiento. 
+Construye y expande sobre un entorno hecho para crecer contigo.
 </p>
 
 <div class="buttons">
 <a href="#" class="primary-button">
-Iniciar sesión
+Iniciar ahora
 </a>
 
 <a href="#" class="secondary-button">
@@ -101,6 +104,103 @@ Ver servicios
 
 </div>
 
+</section>
+
+<!-- PRIMER PANEL DE BENEFICIOS / INFRAESTRUCTURA -->
+<section class="features-section">
+    <div class="features-container">
+        
+        <!-- FEATURE 1 -->
+        <div class="feature-card">
+            <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+            </div>
+            <div class="feature-content">
+                <h3>Velocidad Garantizada</h3>
+                <p>Nuestro rendimiento está altamente respaldado por servidores distribuidos en Centroamerica que ofrecen latencia ultrabaja y procesamiento optimizado para el máximo rendimiento de tus proyectos.</p>
+            </div>
+        </div>
+
+        <!-- FEATURE 2 -->
+        <div class="feature-card">
+            <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+            </div>
+            <div class="feature-content">
+                <h3>Hardware Fisico de Alto nivel</h3>
+                <p>Operamos con servidores físicos modernos completamente dedicados, lo que nos permite ejercer un control absoluto sobre el hardware y así entregar un servicio mas amplio, flexible y personalizado a diferencia de servicios alternativos.</p>
+            </div>
+        </div>
+
+        <!-- FEATURE 3 -->
+        <div class="feature-card">
+            <div class="feature-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+            </div>
+            <div class="feature-content">
+                <h3>Uptime 99.9%</h3>
+                <p>Garantizamos máxima estabilidad y tiempo en línea constante, asegurando que nuestros servicios permanezcan activos sin interrupciones las 24 horas del día y los 7 dias de la semana.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SEGUNDO PANEL DE BENEFICIOS / SERVICIOS -->
+<section class="features-section secondary-features">
+    <div class="features-container">
+        
+
+        <!-- FEATURE 5: SOPORTE 24/7 -->
+        <div class="feature-card">
+            <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+            </div>
+            <div class="feature-content">
+                <h3>Soporte Técnico 24/7</h3>
+                <p>Atención directa y especializada disponible en todo momento para resolver dudas, solucionar problemas y ayudarte a gestionar tu servidor.</p>
+            </div>
+        </div>
+
+                <!-- FEATURE 4: PRECIOS -->
+        <div class="feature-card">
+            <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+            </div>
+            <div class="feature-content">
+                <h3>Planes desde $1.20 USD</h3>
+                <p>Contamos con una amplia gama de planes a precios competitivos y accesibles, que pueden desescalar según la cantidad de recursos necesarios, ofreciendo mayor rendimiento a menor costo.</p>
+            </div>
+        </div>
+
+        <!-- FEATURE 6: PROTECCIÓN ACTIVA (ESCUDO) -->
+        <div class="feature-card">
+            <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+            </div>
+            <div class="feature-content">
+                <h3>Seguridad Certificada</h3>
+                <p>Monitoreo constante y mitigación DDoS avanzada para mantener tus servicios siempre seguros, eficientes y protegidos contra amenazas externas.</p>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <script src="script.js"></script>
