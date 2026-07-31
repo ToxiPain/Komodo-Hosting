@@ -477,13 +477,12 @@ nav a{
    PANEL GRIS Y SLIDER HERO DE MISMO TAMAÑO
 ==========================================*/
 
-/* Contenedor que mantiene las dimensiones originales */
+/* SOLUCIÓN AL SALTO: Mantiene el espacio reservado para que la página no se mueva */
 .hero-image {
-    position: relative;
-    display: inline-block; /* O flex, conserva el tamaño del contenedor actual */
-    overflow: hidden;      /* Mantiene los bordes limpios sin salirse */
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Mantiene la proporción fija durante el cambio de imagen */
+    overflow: hidden;
 }
-
 
 /* Las imágenes se adaptan al 100% de la altura y ancho original */
 #heroMainImage {

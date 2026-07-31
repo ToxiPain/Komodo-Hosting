@@ -1,0 +1,324 @@
+/*==========================================
+            SECCIÓN DE SERVICIOS
+==========================================*/
+
+.services-section {
+    width: 100%;
+    padding: 50px 70px 70px 70px;
+    background: #182238;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* CONTENEDOR DE TARJETAS (APILA LAS TARJETAS CON SEPARACIÓN) */
+.services-container {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Espacio entre tarjetas */
+}
+
+/*==========================================
+            TARJETA DE SERVICIO
+==========================================*/
+
+.service-card {
+    width: 100%;
+    height: 200px; /* Altura estilizada y compacta */
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/*==========================================
+      CONTENEDOR DE 3 COMPARTIMENTOS
+==========================================*/
+
+.service-content-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center; /* Alinea los 3 bloques verticalmente al centro */
+    justify-content: space-between;
+    gap: 25px;
+    padding: 20px 35px; /* Padding equilibrado dentro del panel */
+}
+
+/* 1. INFORMACIÓN (IZQUIERDA) */
+.service-info {
+    flex: 1.2;
+}
+
+.service-name {
+    font-size: 21px;
+    font-weight: 800;
+    color: #1E2A44;
+    margin-bottom: 6px;
+    line-height: 1.2;
+}
+
+.service-description {
+    font-size: 13px;
+    line-height: 1.45;
+    color: #4B5563;
+    margin: 0;
+}
+
+/* LÍNEAS DIVISORAS MINIMALISTAS */
+.service-divider {
+    width: 2px;
+    height: 110px;
+    background-color: #E5E7EB;
+    flex-shrink: 0;
+}
+
+/* 2. SERVIDORES / PLATAFORMAS / MODELOS (CENTRO) */
+.service-servers-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-shrink: 0;
+    min-width: 110px;
+}
+
+.servers-label {
+    font-size: 14px;
+    font-weight: 800;
+    color: #1E2A44;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 2px;
+}
+
+.servers-logos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* ELEMENTOS INDIVIDUALES Y HOVER */
+.server-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Transición suave */
+}
+
+.server-item img {
+    height: 17px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+/* EFECTO INTERACTIVO AL PASAR EL CURSOR */
+.server-item:hover {
+    transform: translateX(5px); /* Se desplaza 5px a la derecha */
+}
+
+.server-item:hover img {
+    transform: scale(1.15); /* Crece ligeramente la imagen */
+}
+
+/* COLORES DE SERVIDORES Y PLATAFORMAS */
+.server-item.node { color: #21a359; }
+.server-item.python { color: #3776AB; }
+.server-item.golang { color: #00ADD8; }
+.server-item.java { color: #E76F00; }
+.server-item.whatsapp { color: #25D366; }
+.server-item.telegram { color: #229ED9; }
+
+/* MODELOS BASILISK (AI STUDIO) */
+.server-item.basilisk-e1,
+.server-item.basilisk-e2,
+.server-item.basilisk-e3,
+.server-item.basilisk-a35 { 
+    color: #234b33; 
+}
+
+/* 3. VER PLANES Y BOTÓN (TERCER COMPARTIMENTO) */
+.service-action-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.action-label {
+    font-size: 13px;
+    font-weight: 800;
+    color: #1E2A44;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.service-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #1E2A44;
+    color: #ffffff;
+    padding: 10px 32px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(30, 42, 68, 0.15);
+}
+
+.service-btn:hover {
+    background: #30456E;
+    transform: translateY(-2px);
+}
+
+.service-btn svg {
+    transition: transform 0.25s ease;
+}
+
+.service-btn:hover svg {
+    transform: translateX(4px);
+}
+
+/*==========================================
+      ESTILOS KOMODO PHONE (#cb3429)
+==========================================*/
+
+.service-name.phone-title {
+    color: #cb3429;
+}
+
+.servers-label.phone-label,
+.action-label.phone-label {
+    color: #cb3429;
+}
+
+.service-btn.phone-btn {
+    background: #cb3429;
+    box-shadow: 0 4px 12px rgba(203, 52, 41, 0.25);
+}
+
+.service-btn.phone-btn:hover {
+    background: #a8281e; /* Tono rojo ligeramente más oscuro al pasar el cursor */
+}
+
+/*==========================================
+    ESTILOS KOMODO AI STUDIO (#234b33)
+==========================================*/
+
+.service-name.ai-title {
+    color: #234b33;
+}
+
+.servers-label.ai-label,
+.action-label.ai-label {
+    color: #234b33;
+}
+
+.service-btn.ai-btn {
+    background: #234b33;
+    box-shadow: 0 4px 12px rgba(35, 75, 51, 0.25);
+}
+
+.service-btn.ai-btn:hover {
+    background: #173423; /* Tono verde oscuro elegante al pasar el cursor */
+}
+
+/*==========================================
+      IMAGEN A LA DERECHA (TOCANDO BORDES)
+==========================================*/
+
+.service-image {
+    width: 350px;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/*==========================================
+                RESPONSIVE
+==========================================*/
+
+@media (max-width: 1024px) {
+    .service-card {
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    .service-content-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px;
+        gap: 20px;
+    }
+
+    .service-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    .service-image {
+        width: 100%;
+        height: 180px;
+    }
+}
+
+/* ESTRUCTURA PARA DOBLE BOTÓN EN EL BLOQUE DE ACCIÓN */
+.service-action-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.action-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* MODELOS BASILISK DE KOMODO AI STUDIO */
+/* Los primeros 3 modelos con un verde más claro */
+.server-item.basilisk-e1,
+.server-item.basilisk-e2,
+.server-item.basilisk-e3 { 
+    color: #2e6f4a; 
+}
+
+/* El cuarto modelo mantiene el tono base */
+.server-item.basilisk-a35 { 
+    color: #234b33; 
+}
+
+/* MISMO TAMAÑO REAL Y PRESENCIA, SOLO MENOS ANCHO */
+.service-card:nth-child(3) .service-action-block .service-btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: fit-content;
+}

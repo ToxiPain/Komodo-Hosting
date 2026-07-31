@@ -17,8 +17,8 @@ const words = [
         color: "#24A1DE"
     },
     {
-        text: "Minecraft Servers",
-        color: "#289d2e"
+        text: "API de IA",
+        color: "#29ec22"
     },
     {
         text: "VPS Cloud",
@@ -161,28 +161,33 @@ if(menuToggle && mobileMenu){
 }
 
 // =========================================
-// CAMBIO DE IMAGEN AUTOMÁTICO EN EL HERO
+// CAMBIO DE IMÁGENES AUTOMÁTICO (MULTIPLE)
 // =========================================
 
 document.addEventListener("DOMContentLoaded", () => {
     const heroImageElement = document.getElementById("heroMainImage");
-    let isHero1 = true;
+
+    // 1. Agrega aquí todas las imágenes que quieras mostrar
+    const images = [
+        "hero.png",
+        "hero2.png",
+        "hero3.png" // <-- Tercera imagen agregada
+    ];
+
+    let currentIndex = 0;
 
     setInterval(() => {
-        // Inicia el desvanecimiento
+        // Inicia la transición suave (desvanecimiento)
         heroImageElement.classList.add("fade-out");
 
         setTimeout(() => {
-            // Alterna la imagen conservando exactamente el mismo tamaño en pantalla
-            if (isHero1) {
-                heroImageElement.src = "hero2.png"; 
-            } else {
-                heroImageElement.src = "hero.png";
-            }
+            // Pasa a la siguiente imagen en la lista
+            currentIndex = (currentIndex + 1) % images.length;
+            heroImageElement.src = images[currentIndex];
             
-            isHero1 = !isHero1;
+            // Muestra la nueva imagen
             heroImageElement.classList.remove("fade-out");
-        }, 500); // 500ms coincide con la duración de la transición CSS
+        }, 500); // 500ms coincide con la transición CSS
         
     }, 5000); // Cambia cada 5 segundos
 });
